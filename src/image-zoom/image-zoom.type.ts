@@ -122,6 +122,10 @@ export class Props {
   public layoutChange?: (event?: object) => void = () => {
     //
   }
+  
+  public updateZoomFactor?: (scale?: number) => void = () => {
+   // 
+  }
 }
 
 export class State {
