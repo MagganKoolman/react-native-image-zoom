@@ -410,6 +410,9 @@ export default class ImageViewer extends React.Component<Props, State> {
               this.animatedPositionY.setValue(this.positionY)
             }
             this.zoomLastDistance = this.zoomCurrentDistance
+            if(this.props.updateZoomFactor){
+              this.props.updateZoomFactor(this.scale)
+            }
           }
         }
 
